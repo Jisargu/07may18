@@ -1,7 +1,6 @@
 function menu() {
     do {
         var opcion = prompt("Menú: \n1.-Sumar 2 números\n2.-Restar 2 números\n3.-Tabla de multiplicar primeros 10 números\n4.-Salir");
-        var tabla = "";
         switch ((Number(opcion))) {
 
             case 1: suma();
@@ -31,6 +30,7 @@ function resta() {
     alert("la resta es: " + (numero1 - numero2));
 }
 function tabla_multiplicar() {
+    let tabla = "";
     let numero1 = Number(prompt("Que tabla de multiplicar"));
     for (i = 1; i <= 10; i++) {
         tabla += (numero1 * i + "\n");
