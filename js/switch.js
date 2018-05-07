@@ -1,5 +1,4 @@
 'use strict';
-const ID_A_MODIFICAR="tamanio_pantalla";
 const CURRENT_YEAR = 2018;
 const EDAD_RAMSES = 24;
 const EDAD_JONATHAN = 27;
@@ -38,10 +37,4 @@ function switchu() {
 
 function anioNacimiento(edad) {
     return (CURRENT_YEAR - edad);
-}
-
-function tamanio_ventana() {
-    let alto_ventana = document.documentElement.clientHeight;
-    let ancho_ventana = document.documentElement.clientWidth;
-    document.getElementById(ID_A_MODIFICAR).innerHTML= "ancho "+ancho_ventana+" alto "+alto_ventana;
 }
